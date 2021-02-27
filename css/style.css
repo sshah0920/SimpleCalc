@@ -110,26 +110,30 @@ body {
  }
  
  .equal:hover,
- .equal:focus { 
+ .equal:focus,
+ .equal:active { 
     background-color: var(--orange-500);
  }
 
 
  .clear:hover,
- .clear:focus { 
+ .clear:focus
+ .clear:active { 
     background-color: var(--orange-500);
  }
-.operator {
+ [data-type="operator"] {
      background-color: var(--grey-100);
  }
 
- .number {
+ [date-type = "number"] {
      background-color: var(--grey-050);
  }
 
- .operator:hover,
- .operator:focus,
- .number:hover,
- .number:focus {
+ [data-type="operator"]:hover,
+ [data-type="operator"]:focus,
+ [data-type="number"]:hover,
+ [data-type="number"]:focus,
+ [data-type="operator"]:active,
+ [data-type="number"]:active {
     background-color: var(--grey-200);
 }
